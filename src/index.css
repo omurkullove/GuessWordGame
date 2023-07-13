@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Press Start 2P', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+   background-color: black;
+   height: 100vh;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 30px;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   padding-top: 50px;
+}
+
+.button {
+   padding: 15px;
+   border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+   border: none;
+   cursor: pointer;
+   margin: 10px;
+}
+
+.button:hover {
+   background-color: cadetblue;
+}
+
+.start {
+   color: green;
+}
+
+.word {
+   border-bottom: 2px solid white;
+   font-size: 15px;
+   padding-bottom: 15px;
+}
+.wordBlock {
+   display: flex;
+   flex-direction: row;
+   gap: 15px;
+}
+
+input {
+   padding: 5px;
+   outline: none;
+}
+
+@media (max-width: 420px) {
+   .main {
+      height: 100vh;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+   }
+
+   .button {
+      padding: 5px;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border: none;
+      cursor: pointer;
+      margin: 5px;
+   }
+
+   input {
+      width: 50%;
+   }
+   .p {
+      font-size: 15px;
+   }
+
+   .button:hover {
+      background-color: cadetblue;
+   }
+
+   .start {
+      color: green;
+   }
+   .afterWord {
+      font-size: 15px;
+      letter-spacing: 5px;
+   }
+
+   .word {
+      border-bottom: 2px solid white;
+      font-size: 15px;
+   }
+   .wordBlock {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+   }
 }
